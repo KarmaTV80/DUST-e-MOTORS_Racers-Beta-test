@@ -25,7 +25,7 @@
 
 ## Gioca subito
 
-**▶ [Apri Dust & Motors](https://karmatv80.github.io/DUST-MOTORS_Racing-beta-v0.1/)**
+**▶ [Apri Dust & Motors](https://karmatv80.github.io/DUST-e-MOTORS_Racers-Beta-test/)**
 
 Non serve installare nulla: si apre nel browser. Sul telefono si può anche installare
 come app (vedi [Installarlo sul telefono](#installarlo-sul-telefono)).
@@ -281,7 +281,7 @@ dal codice. Solo la colonna sonora è in file mp3, nella cartella `musiche` (se 
 usa una musica sintetizzata di riserva).
 
 ```
-DUST-MOTORS_Racing-beta-v0.1/
+DUST-e-MOTORS_Racers-Beta-test/
 ├── index.html              # il gioco completo
 ├── manifest.webmanifest    # nome, icona, schermo intero e orientamento dell'app
 ├── sw.js                   # service worker: gioco offline e aggiornamenti
@@ -301,7 +301,7 @@ Il gioco è pubblicato con **GitHub Pages**:
 
 1. *Settings* → *Pages* → *Branch*: `main`, cartella `/ (root)` → *Save*.
 2. Dopo un paio di minuti il gioco è online su
-   [karmatv80.github.io/DUST-MOTORS_Racing-beta-v0.1](https://karmatv80.github.io/DUST-MOTORS_Racing-beta-v0.1/).
+   [karmatv80.github.io/DUST-e-MOTORS_Racers-Beta-test](https://karmatv80.github.io/DUST-e-MOTORS_Racers-Beta-test/).
 
 Per aggiornarlo basta caricare il nuovo `index.html` al posto del vecchio. Chi ha l'app
 installata riceve l'aggiornamento alla prima apertura con internet.
@@ -318,7 +318,7 @@ poi si apre `http://localhost:8000` nel browser.
 ## Segnalare un problema
 
 Essendo una beta, ogni segnalazione aiuta. Apri una
-[segnalazione (Issue)](https://github.com/KarmaTV80/DUST-MOTORS_Racing-beta-v0.1/issues/new) indicando:
+[segnalazione (Issue)](https://github.com/KarmaTV80/DUST-e-MOTORS_Racers-Beta-test/issues/new) indicando:
 
 - dispositivo e browser (es. *Android 14, Chrome* oppure *Windows 11, Edge*);
 - stage, auto e telecamera usati;

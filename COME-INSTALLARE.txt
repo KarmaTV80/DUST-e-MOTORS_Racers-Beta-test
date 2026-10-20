@@ -1,0 +1,29 @@
+DUST & MOTORS - versione app per telefono
+==========================================
+
+Questa cartella è il gioco pronto da mettere online. Una volta online si installa
+sul telefono come un'app: icona sulla Home, schermo intero in orizzontale, si gioca
+anche senza connessione dopo il primo avvio.
+
+1) METTERLO ONLINE (gratis, con GitHub Pages)
+   - Crea un account su https://github.com (gratuito).
+   - In alto a destra: "+" -> "New repository". Nome: dust-motors. Lascia "Public". "Create repository".
+   - Nella pagina del repository: "uploading an existing file" (o "Add file" -> "Upload files").
+   - Trascina TUTTI i file di questa cartella (index.html, manifest.webmanifest, sw.js,
+     icon-192.png, icon-512.png, icon-maskable-512.png, README.md) e anche la cartella
+     "musiche" intera (trascinala così com'è: GitHub mantiene la cartella), poi "Commit changes".
+   - "Settings" -> "Pages" -> sotto "Branch" scegli "main" e "/ (root)" -> "Save".
+   - Dopo 1-2 minuti il gioco è su:  https://karmatv80.github.io/DUST-e-MOTORS_Racers-Beta-test/
+
+   Nota: con un repository pubblico chiunque abbia il link può giocarci.
+
+2) INSTALLARLO SUL TELEFONO
+   - Android (Chrome): apri il link -> menu (tre puntini) -> "Installa app"
+     oppure "Aggiungi a schermata Home".
+   - iPhone (Safari): apri il link -> tasto Condividi -> "Aggiungi alla schermata Home".
+   - Apri il gioco dall'icona Dust & Motors sulla Home.
+
+3) AGGIORNARLO
+   - Quando il gioco cambia, ricarica su GitHub il nuovo index.html (e sw.js se è cambiato)
+     ("Add file" -> "Upload files", stesso nome: sostituisce il vecchio).
+   - Sul telefono l'aggiornamento arriva alla prima apertura con internet.

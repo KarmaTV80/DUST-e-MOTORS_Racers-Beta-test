@@ -1,7 +1,7 @@
 // Dust & Motors: service worker per giocare anche senza connessione.
 // Il gioco (index.html) viene preso dalla rete quando c'è, così gli aggiornamenti arrivano subito;
 // offline si usa la copia salvata. Motore 3D, font e icone si salvano al primo avvio e poi restano.
-const CACHE = 'dust-motors-v3';
+const CACHE = 'dust-motors-v4';   // v4: delorean.glb presa prima dalla rete
 const CORE = [
   './',
   './index.html',
@@ -64,6 +64,16 @@ self.addEventListener('fetch', e => {
   if (req.headers.has('range')) { e.respondWith(rangeResponse(req).catch(() => fetch(req))); return; }
   const url = new URL(req.url);
   const isPage = req.mode === 'navigate' || (url.origin === location.origin && url.pathname.endsWith('.html'));
+  // modelli 3D (delorean.glb): anche loro prima dalla rete, così quando il file viene aggiornato arriva quello nuovo
+  // (offline la copia salvata)
+  if (url.origin === location.origin && url.pathname.endsWith('.glb')) {
+    e.respondWith(
+      fetch(req)
+        .then(res => { if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); } return res; })
+        .catch(() => caches.match(req))
+    );
+    return;
+  }
   if (isPage) {
     // prima la rete (versione aggiornata), poi la copia salvata
     e.respondWith(
